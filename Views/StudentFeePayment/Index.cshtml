@@ -1,0 +1,65 @@
+﻿@model berkeley_collegee.Models.Student
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Student Fee Details</h1>
+<div class="form-group">
+    <form asp-action="Details">
+        <label asp-for="StudentId" class="control-label"></label>
+        <select asp-for="StudentId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.StudentId"><option selected>@ViewBag.Student.StudentId</option></select>
+    </form>
+</div>
+<div>
+    <h3>Student ID :<a asp-action="Details" asp-controller="Students" asp-route-id="@ViewBag.Student.StudentId">@ViewBag.Student.StudentId</a>  </h3>
+    <h3>Student Name: @ViewBag.Student.StudentNavigation.FirstName  @ViewBag.Student.StudentNavigation.LastName</h3>
+    <h3>Student Date of Birth: @ViewBag.Student.StudentNavigation.Dateofbirth</h3>
+    <h3>Student Gender: @ViewBag.Student.StudentNavigation.Gender</h3>
+    <h3>Student's Contact: @ViewBag.Student.StudentNavigation.ContactNo</h3>
+    <h3>Student's Email: @ViewBag.Student.StudentNavigation.Email</h3>
+</div>
+<script type="text/javascript">
+ function OnChangeEvent(dropDownElement){
+  var selectedValue = dropDownElement.options[dropDownElement.selectedIndex].value;
+     document.location = "/StudentFeePayment/Index/" + selectedValue;
+ }
+</script>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Invoice-no:
+            </th>
+            <th>
+                Student_ID
+            </th>
+            <th>
+                Amount:
+            </th>
+            <th>
+                Payment-Status:
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in (IEnumerable<FeePayment>)ViewBag.payments)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvoiceNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentStatus)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,73 @@
+﻿@model berkeley_collegee.Models.Student
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Student Results Details</h1>
+<div class="form-group">
+    <form asp-action="Details">
+        <label asp-for="StudentId" class="control-label"></label>
+        <select asp-for="StudentId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.StudentId"><option selected>@ViewBag.Student.StudentId</option></select>
+    </form>
+</div>
+<div>
+    <h3>Student ID :<a asp-action="Details" asp-controller="Students" asp-route-id="@ViewBag.Student.StudentId">@ViewBag.Student.StudentId</a>  </h3>
+    <h3>Student Name: @ViewBag.Student.StudentNavigation.FirstName  @ViewBag.Student.StudentNavigation.LastName</h3>
+</div>
+<script type="text/javascript">
+ function OnChangeEvent(dropDownElement){
+  var selectedValue = dropDownElement.options[dropDownElement.selectedIndex].value;
+     document.location = "/StudentResult/Index/" + selectedValue;
+ }
+</script>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Result_ID
+            </th>
+            <th>
+                Assignment_ID
+            </th>
+            <th>
+                Module_Code
+            </th>
+            <th>
+                Student_ID
+            </th>
+            <th>
+                Grade
+            </th>
+            <th>
+                Status
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in (IEnumerable<ModuleResult>)ViewBag.results)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssignmentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

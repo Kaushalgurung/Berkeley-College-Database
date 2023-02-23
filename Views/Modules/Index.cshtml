@@ -1,0 +1,47 @@
+﻿@model IEnumerable<berkeley_collegee.Models.Module>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Module Details</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreditHours)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreditHours)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ModuleCode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ModuleCode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ModuleCode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

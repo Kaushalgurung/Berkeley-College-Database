@@ -1,0 +1,59 @@
+﻿@model berkeley_collegee.Models.Teacher
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Teacher Module Mapping Form</h1>
+<div class="form-group">
+    <form asp-action="Details">
+        <label asp-for="TeacherId" class="control-label"></label>
+        <select asp-for="TeacherId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.TeacherId"><option selected>@ViewBag.Teacher.TeacherId</option></select>
+    </form>
+</div>
+<div>
+    <h3>Teacher-ID :<a asp-action="Details" asp-controller="Teachers" asp-route-id="@ViewBag.Teacher.TeacherId">@ViewBag.Teacher.TeacherId</a>  </h3>
+    <h3>Teacher Name: @ViewBag.Teacher.TeacherNavigation.FirstName  @ViewBag.Teacher.TeacherNavigation.LastName</h3>
+    <h3>Teacher Date of Birth: @ViewBag.Teacher.TeacherNavigation.Dateofbirth</h3>
+    <h3>Teacher Gender: @ViewBag.Teacher.TeacherNavigation.Gender</h3>
+    <h3>Teacher's Contact: @ViewBag.Teacher.TeacherNavigation.ContactNo</h3>
+    <h3>Teacher's Email: @ViewBag.Teacher.TeacherNavigation.Email</h3>
+</div>
+<script type="text/javascript">
+ function OnChangeEvent(dropDownElement){
+  var selectedValue = dropDownElement.options[dropDownElement.selectedIndex].value;
+  document.location = "/TeacherModule/Index/" + selectedValue;
+ }
+</script>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Module Code
+            </th>
+            <th>
+                Module Name
+            </th>
+            <th>
+                Credit hours
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in (IEnumerable<Module>)ViewBag.modules)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModuleCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModuleName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreditHours)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js">
+</script>
+<div id="chartContainer1" style="width: 60%; height: 400px;display: inline-block;"></div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div id="chartContainer2" style="width: 60%; height: 400px;display: inline-block;"></div>
+<br />
+
+<script type="text/javascript">
+    window.onload = function () {
+        var mydata = @Html.Raw(@ViewBag.DataPoints)
+        var dataPoints = []
+                for(var i = 0 ; i< mydata.length; i++){
+                    dataPoints.push({
+                        y : mydata[i].X,
+                        label : mydata[i].Y
+                    });
+                }
+        var chart = new CanvasJS.Chart("chartContainer1", {
+            theme: "light2",
+            animationEnabled: true,
+            title: {
+                text: "@ViewBag.ChartTitle"
+            },
+            subtitles: [
+                { text: "@ViewBag.ChartSubTitle" }
+            ],
+            data: [
+            {
+                type: "@ViewBag.ChartType", //change type to bar, line, area, pie, etc
+                dataPoints :dataPoints
+            }
+            ]
+        });
+        var mydata2 = @Html.Raw(@ViewBag.DataPoints2)
+        var dataPoints2 = []
+                for(var i = 0 ; i< mydata2.length; i++){
+                    dataPoints2.push({
+                        y : mydata2[i].X,
+                        label : mydata2[i].Y
+                    });
+                }
+        var chart2 = new CanvasJS.Chart("chartContainer2", {
+            theme: "light2",
+            animationEnabled: true,
+            title: {
+                text: "@ViewBag.ChartTitle2"
+            },
+            subtitles: [
+                { text: "@ViewBag.ChartSubTitle2" }
+            ],
+            data: [
+            {
+                type: "@ViewBag.ChartType2", //change type to bar, line, area, pie, etc
+                dataPoints :dataPoints2
+            }
+            ]
+        });
+
+        chart.render();
+        chart2.render();
+    };
+</script>

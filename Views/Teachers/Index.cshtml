@@ -1,0 +1,80 @@
+﻿@model IEnumerable<berkeley_collegee.Models.Teacher>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Teacher Details</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherNavigation.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherNavigation.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qualification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherNavigation.Address.ProvinceOrState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherNavigation.Address.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherNavigation.Address.StreetNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherNavigation.Address.StreetName)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherNavigation.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherNavigation.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qualification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherNavigation.Address.ProvinceOrState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherNavigation.Address.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherNavigation.Address.StreetNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherNavigation.Address.StreetName)
+            </td>
+
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TeacherId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TeacherId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TeacherId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
