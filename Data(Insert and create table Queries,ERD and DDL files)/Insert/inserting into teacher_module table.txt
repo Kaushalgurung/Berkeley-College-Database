@@ -1,0 +1,10 @@
+INSERT INTO teacher_module VALUES ('P8','M901C');
+INSERT INTO teacher_module VALUES ('P9','M902C');
+INSERT INTO teacher_module VALUES ('P10','M903C');
+INSERT INTO teacher_module VALUES ('P11','M904C');
+INSERT INTO teacher_module VALUES ('P12','M901I');
+INSERT INTO teacher_module VALUES ('P13','M902N');
+INSERT INTO teacher_module VALUES ('P14','M903M');
+INSERT INTO teacher_module VALUES ('P15','M901N');
+INSERT INTO teacher_module VALUES ('P19','M903M');
+INSERT INTO teacher_module VALUES ('P20','M962N');

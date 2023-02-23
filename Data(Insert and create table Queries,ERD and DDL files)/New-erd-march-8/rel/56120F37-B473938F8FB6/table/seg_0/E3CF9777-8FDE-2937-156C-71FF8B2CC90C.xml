@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3CF9777-8FDE-2937-156C-71FF8B2CC90C" name="Fee_Payment">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:15:59 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Invoice_no." id="11DF7AB4-C042-0DE2-6CBB-82283869FD09">
+<createdBy>user</createdBy>
+<createdTime>2022-03-08 02:57:24 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Student_ID" id="66EA6A85-3A5B-CFC3-FA31-C9657484279C">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:16:42 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54625175-4915-884B-4A02-726A9E860964" referredColumn="3B51F979-81FE-2ED8-6A6B-01202ACCB3CE"/>
+</associations>
+</Column>
+<Column name="Department_ID" id="C5B25B0A-0D55-9173-8CFE-A4A9A8157D3B">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:17:41 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48274E53-3DC9-4B36-DCCB-96FE3AE686F3" referredColumn="88AF841C-F744-26F6-B513-431223DC2320"/>
+</associations>
+</Column>
+<Column name="Amount" id="08CE81B9-07A7-FB69-E2F6-52FA987BDB0E">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:22:37 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Payment_Status" id="991CDB0E-5F20-26B1-3067-2601FDCE7FEF">
+<createdBy>user</createdBy>
+<createdTime>2022-03-06 03:52:14 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E5D0CC3-0383-7CB6-0D9A-5155EE14A4C4" name="Fee_Payment_PK">
+<createdBy>user</createdBy>
+<createdTime>2022-03-08 02:57:24 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11DF7AB4-C042-0DE2-6CBB-82283869FD09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCDB2771-E5B7-6518-55B4-60ACEFE9C534" name="Fee_Payment_Student_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:17:02 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66EA6A85-3A5B-CFC3-FA31-C9657484279C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DBC2A7E-4779-360C-656E-90A559CC491F" name="Fee_Payment_Department_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:17:57 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5B25B0A-0D55-9173-8CFE-A4A9A8157D3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

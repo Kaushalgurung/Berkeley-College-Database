@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9FA0AF5-7C81-570F-35CC-9EFE97820341" name="Module">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:41:53 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Module_Code" id="84472A4E-EE15-65CC-7C6F-1BBB7F73D5B4">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:42:17 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Module_Name" id="879D5907-8CE6-7091-B75E-52D0FEF0EA44">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:42:46 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Credit_Hours" id="46C4AE92-B5A3-BA76-D4D6-B714A08E980C">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:44:16 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94FCD9AF-AD5A-9470-575E-7D351D466BB3" name="Module_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:42:17 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84472A4E-EE15-65CC-7C6F-1BBB7F73D5B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

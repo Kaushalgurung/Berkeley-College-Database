@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73B125FC-3B59-331E-4C36-3E37517EE2C4" name="Teacher">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:24:57 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Teacher_ID" id="A7B95602-F608-D999-C988-F9A8DA407786">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:27:04 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55FB5A1B-AB79-5239-1C9A-DCA1A51153D6" referredColumn="5ED8636D-FEE8-A95F-8922-B48F0BD1048E"/>
+</associations>
+</Column>
+<Column name="Qualification" id="007AE6FD-9033-C177-87F8-CC437AD4DEA9">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:38:42 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54012DE8-B5CF-B9F3-B557-23AEB84AE39C" name="Teacher_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:28:00 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7B95602-F608-D999-C988-F9A8DA407786"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4753B1F4-513F-5B15-A009-A73ECA47AF40" name="Teacher_Person_FK">
+<createdBy>user</createdBy>
+<createdTime>2022-03-07 06:45:18 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7B95602-F608-D999-C988-F9A8DA407786"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

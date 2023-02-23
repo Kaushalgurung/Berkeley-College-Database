@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98DAAFB4-6D18-4600-1246-FAC812FBC2DE" name="Department">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:58:02 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Department_ID" id="88AF841C-F744-26F6-B513-431223DC2320">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:58:31 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_Name" id="89E21CA4-8A70-EBD2-C69A-3965C59B003A">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:59:15 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_Contact" id="18E6D4B8-3CC5-FCDA-33BD-056FDBFD3EA9">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-10 11:10:43 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B941BEC5-CD3F-833A-6486-CF8272747B5C" name="Department_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:58:31 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88AF841C-F744-26F6-B513-431223DC2320"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

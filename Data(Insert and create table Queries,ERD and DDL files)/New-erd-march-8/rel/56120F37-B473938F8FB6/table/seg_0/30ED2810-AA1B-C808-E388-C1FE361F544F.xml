@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30ED2810-AA1B-C808-E388-C1FE361F544F" name="Person_Address">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:21:50 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Person_ID" id="E370558E-CF2C-127E-615F-7C216EADDEDF">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:22:46 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BCD65C5B-B60F-021B-FB08-3ADDF9013F1C" referredColumn="5ED8636D-FEE8-A95F-8922-B48F0BD1048E"/>
+</associations>
+</Column>
+<Column name="Address_ID" id="20248F66-3B9B-4C43-767A-11C5BE35DC29">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:23:12 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74F6E433-6F9B-BC20-FDD8-4309BBC429E5" referredColumn="5D3CB38D-22CA-895E-5F6B-64867ADCEECF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61915F41-D486-B826-3592-11035E5D79D6" name="Person_Address_PK">
+<createdBy>user</createdBy>
+<createdTime>2022-03-06 03:58:15 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E370558E-CF2C-127E-615F-7C216EADDEDF"/>
+<colUsage columnID="20248F66-3B9B-4C43-767A-11C5BE35DC29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7AE93E0-0EBD-F70B-2E05-B3AC5C5F11B5" name="Person_Address_Address_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:23:49 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20248F66-3B9B-4C43-767A-11C5BE35DC29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85F27CD1-4727-BAC3-FAB1-05234537488A" name="Person_Address_Person_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:24:05 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E370558E-CF2C-127E-615F-7C216EADDEDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

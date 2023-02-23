@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="04B3B96F-E71E-DB5C-9080-D0EA8078609A" name="Student_Attendence">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:02:53 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Attendence_ID" id="A95C4453-B1A6-B063-F297-4BABA10AB586">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:03:32 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Student_ID" id="6C5B32AF-84C7-E8F2-7F32-BF8D89108183">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:12:40 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF161D23-0EA9-65A1-AC31-C240A4B2B211" referredColumn="3B51F979-81FE-2ED8-6A6B-01202ACCB3CE"/>
+</associations>
+</Column>
+<Column name="Attendence" id="2EF717A3-27F1-977D-4D23-A36105A9110C">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:24:28 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00E21819-86DF-0FCB-0FCC-976E34C0D12E" name="Student_Attendence_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:12:13 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A95C4453-B1A6-B063-F297-4BABA10AB586"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68306B1F-117D-EF73-4225-9AA78E9CF06C" name="Student_Attendence_Student_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 12:13:47 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C5B32AF-84C7-E8F2-7F32-BF8D89108183"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

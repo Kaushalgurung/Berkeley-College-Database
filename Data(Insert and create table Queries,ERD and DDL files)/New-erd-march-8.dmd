@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="New-erd-march-8" id="1CECDF2E-7E35-F6A0-0E22-EAB55EF55BBC" version="3.5">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 05:52:05 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1CECDF2E-7E35-F6A0-0E22-EAB55EF55BBC</designId>
+</OSDM_Design>

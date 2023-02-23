@@ -1,0 +1,65 @@
+Oracle 11g password- alka
+*************************************************
+1) List of teacher teaching more than 1 module
+SELECT TEACHER_ID,COUNT(MODULE_CODE) AS "Total Module" FROM TEACHER_MODULE HAVING COUNT(MODULE_CODE)>1 GROUP BY TEACHER_ID;
+--------------------------------------------------
+2) Age of person
+SELECT first_name,last_name, dateofbirth, ROUND((sysdate-dateofbirth)/365) AS AGE FROM PERSON;
+--------------------------------------------------
+3) List of Student who has not paid fee
+SELECT s.student_id,fp."Invoice_no.",fp.amount,fp.payment_status FROM student s join fee_payment fp on s.student_id = fp.student_id WHERE fp.payment_status='UnPaid';
+--------------------------------------------------
+4) List of student enrolled before 2019
+SELECT s.student_id, p.first_name, p.last_name, p.gender, p.dateofbirth, s.enrolled_year FROM student s join person p on p.person_id = s.student_id  WHERE enrolled_year<2019;
+--------------------------------------------------
+5) List of person who is both teacher and student
+SELECT .STUDENT_ID,t.TEACHER_ID,p.first_name, p.last_name FROM STUDENT s JOIN TEACHER t ON S.STUDENT_ID = .TEACHER_ID JOIN PERSON p ON S.STUDENT_ID=P.PERSON_ID;
+--------------------------------------------------
+6) list the result of student having grade A+
+SELECT p.first_name, p.last_name, mr.result_id, s.student_id, mr.assignment_id, a.assignment_type, m.module_name, mr.grade, mr.status FROM  module_result mr join student s on s.student_id=mr.student_id join assignment a on a.assignment_id = mr.assignment_id
+join module m on m.module_code = mr.module_code JOIN person p on p.person_id = s.student_id WHERE mr.grade='A+';
+--------------------------------------------------
+7) Student having attendence more than 80 percent
+SELECT * FROM student s join student_attendence sa on sa.student_id = s.student_id join person p on p.person_id=s.student_id WHERE sa.attendence>80;
+--------------------------------------------------
+8) list of Person who live in pokhara
+SELECT * FROM person p join person_address pa on p.person_id = pa.person_id join address a on a.address_id = pa.address_id where a.city = 'Pokhara';
+--------------------------------------------------
+9) Average fee of student
+SELECT Avg(Amount) AS "Average fee" from fee_payment;
+--------------------------------------------------
+10) Total fee of student
+SELECT SUM(Amount) AS "Total Fee" from fee_payment;
+--------------------------------------------------
+11) List of person order by date of birth descending
+SELECT * FROM person ORDER by dateofbirth DESC;
+---------------------------------------------------
+12) Module Result group by garde
+SELECT COUNT(STUDENT_ID) AS "Number of Student", GRADE FROM module_result GROUP BY GRADE;
+---------------------------------------------------
+13) Number of male and female in data
+SELECT COUNT(PERSON_ID) AS "Number", gender FROM person GROUP BY Gender;
+----------------------------------------------------
+14) Number of student in each module
+
+SELECT COUNT(Teacher_ID) AS "Number of teacher", module_code FROM teacher_module GROUP BY module_code;
+-----------------------------------------------------
+15) Number of teacher having specific qualification
+SELECT COUNT(Teacher_ID) AS "Teacher Quaification", Qualification FROM teacher GROUP BY qualification;
+-----------------------------------------------------
+16) Number of student enrolled in sepcific year (GROUP BY)
+SELECT COUNT(Student_ID) AS "Studnet_no", enrolled_year FROM student GROUP BY enrolled_year;
+-----------------------------------------------------
+17) Number of student who has paid and unpaid fee (GROUP BY)
+SELECT COUNT(Student_ID) AS "Studnet_no", payment_status FROM fee_payment GROUP BY payment_status;
+-----------------------------------------------------18) Number of student studying each module
+SELECT COUNT(student_id) AS "Number of student", module_code FROM student_module GROUP BY module_code having COUNT(module_code)>1;
+-----------------------------------------------------19) List of student studying more than 1 module
+SELECT STUDENT_ID,COUNT(MODULE_CODE) AS "Total Module" FROM STUDENT_MODULE HAVING COUNT(MODULE_CODE)>1 GROUP BY STUDENT_ID;
+-----------------------------------------------------
+20) No. of student enrolled in each year
+SELECT COUNT(Student_id) as "no. of student", enrolled_year from student group by enrolled_year;
+------------------------------------------------------
+21) Person born between specific date
+SELECT * FROM person
+where dateofbirth between '01-JAN-1999' and '01-DEC-2000'

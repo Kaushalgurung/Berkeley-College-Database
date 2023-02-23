@@ -1,0 +1,10 @@
+INSERT INTO module VALUES('M901C','Advanced Database', 40);
+INSERT INTO module VALUES('M902C','Application Development', 40);
+INSERT INTO module VALUES('M903C','Android App Development', 50);
+INSERT INTO module VALUES('M904C','Networks and operating system', 40);
+INSERT INTO module VALUES('M901I','Software engineering', 20);
+INSERT INTO module VALUES('M902N','Engineering Thermodynamic', 30);
+INSERT INTO module VALUES('M903M','Software development', 40);
+INSERT INTO module VALUES('M905C','Artificial Intelligence', 20);
+INSERT INTO module VALUES('M901N','Ethical Hacking', 20);
+INSERT INTO module VALUES('M962N','Computer Hardware', 60);

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3585966-6859-A143-D85D-B3A170F44023" name="Address">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:15:30 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Address_ID" id="5D3CB38D-22CA-895E-5F6B-64867ADCEECF">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:17:11 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Country" id="D3033751-FB40-4682-5215-49993C17A341">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:18:10 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Province_or_State" id="F6F52FBA-4F72-7AC7-D788-0E357DCB6B7A">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:19:12 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="City" id="178993BC-6DD5-D73A-1C58-6524B512040B">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:19:46 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Street_no" id="57CDC9C5-D38B-C4E1-E51A-12F79BCCBCC7">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:20:57 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Street_Name" id="4983FCD1-351D-DD95-6448-88ED94EF1704">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:21:38 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F55B2B27-E483-968F-7485-349E8DFFD2C4" name="Address_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:17:16 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D3CB38D-22CA-895E-5F6B-64867ADCEECF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

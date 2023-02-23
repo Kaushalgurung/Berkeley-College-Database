@@ -1,0 +1,29 @@
+INSERT INTO module_result VALUES('R1','ASM1','M901C','P1','A','Pass');
+INSERT INTO module_result VALUES('R2','ASM2','M901C','P1','B+','Pass');
+INSERT INTO module_result VALUES('R3','ASM3','M901C','P1','B','Pass');
+INSERT INTO module_result VALUES('R4','ASM4','M901C','P1','B+','Pass');
+INSERT INTO module_result VALUES('R5','ASM5','M901C','P1','B+','Pass');
+INSERT INTO module_result VALUES('R6','ASM6','M901C','P1','B+','Pass');
+
+INSERT INTO module_result VALUES('R7','ASM1','M902C','P1','A','Pass');
+INSERT INTO module_result VALUES('R8','ASM2','M902C','P1','B','Pass');
+INSERT INTO module_result VALUES('R9','ASM3','M902C','P1','B','Pass');
+INSERT INTO module_result VALUES('R10','ASM4','M902C','P1','B','Pass');
+INSERT INTO module_result VALUES('R11','ASM5','M902C','P1','B','Pass');
+INSERT INTO module_result VALUES('R12','ASM6','M902C','P1','B','Pass');
+
+INSERT INTO module_result VALUES('R13','ASM1','M903C','P1','A','Pass');
+INSERT INTO module_result VALUES('R14','ASM2','M903C','P1','A','Pass');
+INSERT INTO module_result VALUES('R15','ASM3','M903C','P1','B+','Pass');
+INSERT INTO module_result VALUES('R16','ASM4','M903C','P1','C+','Pass');
+INSERT INTO module_result VALUES('R17','ASM5','M903C','P1','B+','Pass');
+INSERT INTO module_result VALUES('R18','ASM6','M903C','P1','B','Pass');
+
+INSERT INTO module_result VALUES('R19','ASM1','M904C','P1','A','Pass');
+INSERT INTO module_result VALUES('R21','ASM3','M904C','P1','B+','Pass');
+INSERT INTO module_result VALUES('R22','ASM4','M904C','P1','B','Pass');
+INSERT INTO module_result VALUES('R23','ASM5','M904C','P1','A+','Pass');
+INSERT INTO module_result VALUES('R24','ASM6','M904C','P1','B','Pass');
+SELECT
+    * FROM module_result;
+DELETE from module_result;

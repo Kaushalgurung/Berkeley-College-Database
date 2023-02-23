@@ -1,0 +1,6 @@
+INSERT INTO assignment VALUES ('ASM1','Indivisual Coursework','D1');
+INSERT INTO assignment VALUES ('AST2','Group Coursework','D1');
+INSERT INTO assignment VALUES ('ASM3','Group Presentation','D1');
+INSERT INTO assignment VALUES ('ASM4','Indivisual Presentation','D1');
+INSERT INTO assignment VALUES ('ASM5','Written Examination','D2');
+INSERT INTO assignment VALUES ('ASM6','Unseen Examination','D2');

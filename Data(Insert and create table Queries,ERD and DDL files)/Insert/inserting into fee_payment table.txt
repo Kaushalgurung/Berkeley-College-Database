@@ -1,0 +1,10 @@
+INSERT INTO fee_payment VALUES(2001,'P1','D3',450000, 'Paid');
+INSERT INTO fee_payment VALUES(2002,'P2','D3',140000, 'UnPaid');
+INSERT INTO fee_payment VALUES(2003,'P3','D3',125000, 'UnPaid');
+INSERT INTO fee_payment VALUES(2004,'P4','D3',156000, 'UnPaid');
+INSERT INTO fee_payment VALUES(2005,'P5','D3',120000, 'Paid');
+INSERT INTO fee_payment VALUES(2006,'P6','D3',103000, 'Paid');
+INSERT INTO fee_payment VALUES(2007,'P7','D3',117000, 'UnPaid');
+INSERT INTO fee_payment VALUES(2008,'P16','D3',150000, 'Paid');
+INSERT INTO fee_payment VALUES(2009,'P17','D3',149000, 'Paid');
+INSERT INTO fee_payment VALUES(20010,'P18','D3',145000, 'UnPaid');

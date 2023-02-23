@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E39D8B22-6F14-8A40-1F36-50F9428337B6" name="Teacher_Module">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:44:28 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Teacher_ID" id="8F4C2CA4-966F-48F9-8E92-52749D4AB668">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:44:53 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC8D5333-3130-D4D8-85FD-673EDC30B937" referredColumn="A7B95602-F608-D999-C988-F9A8DA407786"/>
+</associations>
+</Column>
+<Column name="Module_Code" id="3785082F-0DE3-C640-9C70-B7532C62CCAB">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:46:54 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="965927C5-18C5-039F-D84D-5C1E1DBE1DB2" referredColumn="84472A4E-EE15-65CC-7C6F-1BBB7F73D5B4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33F7CE94-1DF9-69EB-1B85-B9D375E69EFF" name="Teacher_Module_PK">
+<createdBy>user</createdBy>
+<createdTime>2022-03-06 03:40:19 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F4C2CA4-966F-48F9-8E92-52749D4AB668"/>
+<colUsage columnID="3785082F-0DE3-C640-9C70-B7532C62CCAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E2E07E7-2E79-7521-8BE1-0237B198F09F" name="Teacher_Module_Module_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:47:09 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3785082F-0DE3-C640-9C70-B7532C62CCAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FC2ABC1-8C9B-BC0C-0245-629822AD5EAA" name="Teacher_Module_Teacher_FK">
+<createdBy>user</createdBy>
+<createdTime>2022-03-06 03:40:57 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F4C2CA4-966F-48F9-8E92-52749D4AB668"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

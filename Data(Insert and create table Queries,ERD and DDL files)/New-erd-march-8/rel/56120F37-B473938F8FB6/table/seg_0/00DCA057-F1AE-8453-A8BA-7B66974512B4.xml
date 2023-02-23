@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00DCA057-F1AE-8453-A8BA-7B66974512B4" name="Student">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:39:38 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Student_ID" id="3B51F979-81FE-2ED8-6A6B-01202ACCB3CE">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:40:12 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE65258B-CCB4-12D0-488A-90C6938FBB7A" referredColumn="5ED8636D-FEE8-A95F-8922-B48F0BD1048E"/>
+</associations>
+</Column>
+<Column name="Enrolled_Year" id="F6B0D578-CE05-667A-62FA-35B97C9D8736">
+<createdBy>user</createdBy>
+<createdTime>2022-03-06 03:43:52 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5686F798-FEEA-D253-DFE1-FB56668CDBEB" name="Student_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2022-03-05 11:40:12 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B51F979-81FE-2ED8-6A6B-01202ACCB3CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="126509DA-9C21-5404-E27F-720020447AD8" name="Student_Person_FK">
+<createdBy>user</createdBy>
+<createdTime>2022-03-06 03:42:58 UTC</createdTime>
+<ownerDesignName>New-erd-march-8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B51F979-81FE-2ED8-6A6B-01202ACCB3CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

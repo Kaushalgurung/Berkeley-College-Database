@@ -1,0 +1,10 @@
+INSERT INTO student_attendence VALUES ('AT1','P1','73');
+INSERT INTO student_attendence VALUES ('AT2','P2','63');
+INSERT INTO student_attendence VALUES ('AT3','P3','79');
+INSERT INTO student_attendence VALUES ('AT4','P4','89');
+INSERT INTO student_attendence VALUES ('AT5','P5','64');
+INSERT INTO student_attendence VALUES ('AT6','P6','73');
+INSERT INTO student_attendence VALUES ('AT7','P7','73');
+INSERT INTO student_attendence VALUES ('AT8','P16','81');
+INSERT INTO student_attendence VALUES ('AT9','P17','89');
+INSERT INTO student_attendence VALUES ('AT10','P18','80');

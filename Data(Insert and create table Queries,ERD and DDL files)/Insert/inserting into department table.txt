@@ -1,0 +1,5 @@
+INSERT INTO department VALUES('D1','Academic','04589706');
+INSERT INTO department VALUES('D2','Exam','04545890');
+INSERT INTO department VALUES('D3','Finance','02356206');
+
+select * from department;

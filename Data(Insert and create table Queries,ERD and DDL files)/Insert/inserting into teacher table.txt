@@ -1,0 +1,10 @@
+INSERT INTO teacher VALUES('P8','Masters degree');
+INSERT INTO teacher VALUES('P9','Masters degree');
+INSERT INTO teacher VALUES('P10','Phd');
+INSERT INTO teacher VALUES('P11','Phd');
+INSERT INTO teacher VALUES('P12','Masters degree');
+INSERT INTO teacher VALUES('P13','Masters degree');
+INSERT INTO teacher VALUES('P14','Phd');
+INSERT INTO teacher VALUES('P15','Phd');
+INSERT INTO teacher VALUES('P19','Masters degree');
+INSERT INTO teacher VALUES('P20','Masters degree');
